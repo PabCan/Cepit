@@ -1,0 +1,14 @@
+{
+    "name": "registro-vehiculos",
+    "version": "1.0.0",
+    "main": "main.ts",
+    "scripts": {
+      "start": "tsc && node main.js",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "Un sistema de registro de vehículos en TypeScript"
+  }
+  
