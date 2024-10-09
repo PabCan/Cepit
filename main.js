@@ -1,0 +1,18 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const vehiculos_1 = require("./vehiculos");
+let auto1 = new vehiculos_1.Auto("VW", "Polo", 2007);
+let moto1 = new vehiculos_1.Moto("Zanella", "600", 2012);
+let camion1 = new vehiculos_1.Camion("Iveco", "350", 2020);
+let registro = new vehiculos_1.RegistroAutomotor();
+registro.agregarVehiculo(auto1);
+registro.agregarVehiculo(moto1);
+registro.agregarVehiculo(camion1);
+console.log("Vehículos en el registro:");
+registro.listarVehiculos();
+registro.modificarVehiculo(0, "Peugeot", "208", 2023);
+console.log("\nDespués de modificar el vehículo:");
+registro.listarVehiculos();
+registro.darDeBaja(1);
+console.log("\nDespués de dar de baja el vehículo:");
+registro.listarVehiculos();
